@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: springboot-crud
+    env: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://slate-shadow-11495.j77.aws-ap-south-1.cockroachlabs.cloud:26257/defaultdb
+      - key: SPRING_DATASOURCE_USERNAME
+        value: shreyanshu005_gmail_
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+      - key: SPRING_JPA_SHOW_SQL
+        value: true
+      - key: SERVER_PORT
+        value: 8080 
