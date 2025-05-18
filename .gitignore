@@ -1,0 +1,24 @@
+# CockroachDB data
+cockroach-data/
+target/
+
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.class
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db 
